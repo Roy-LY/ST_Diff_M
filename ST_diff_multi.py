@@ -405,7 +405,7 @@ def RunMultiple(N, start, length): # N rounds, starting position, a bunch of wnd
         Base = base_list[i]
         Factor = Base**IND % SUBTERRANEAN_SIZE
         #print(Base, Factor)
-        for x in range(28, 31):
+        for x in range(21, 31):
             genModel2(N, Base, Factor, x)
             # x for weight
             name = 'ST'+ str(SUBTERRANEAN_SIZE)+'_'+str(BOUND)+'_'+str(Base)+'_'+str(x)
